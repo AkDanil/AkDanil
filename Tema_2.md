@@ -45,8 +45,10 @@ print(1823 - 486)
 print(5.1 + 8.27)
 print(3 + 7.04 + 1 + 2.33)
 ```
+### Результат.
+![Меню](Lab_2.png)
 
-- Скрины консоли
+## Выводы
 1. print(1823 - 486) — выполняется вычитание. Результат: 1337.
 2. print(5.1 + 8.27) — выполняется сложение двух чисел с плавающей точкой. Результат: 13.37.
 3. print(3 + 7.04 + 1 + 2.33) — сложение нескольких чисел, включая целые и с плавающей точкой
@@ -63,7 +65,7 @@ two = 'Мир!'
 print(one + two)
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_3.png)
 
 ## Выводы
 1. print('Привет, Мир!') — вывод строки напрямую.
@@ -83,7 +85,7 @@ three = None
 print(str(three))
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_4.png)
 
 ## Выводы
 1. bool(one) — строка 'Hello' преобразуется в булево значение. Любая непустая строка в Python является True. Вывод: True.
@@ -100,7 +102,7 @@ three = input('three:')
 print(one, two, three)
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_5.png)
 
 ## Выводы
 1. input('one:') — программа запрашивает ввод от пользователя с текстом one:. Все, что введёт пользователь, будет сохранено как строка в переменной one.
@@ -118,7 +120,7 @@ print('Целочисленное деление:', a // b)
 print('Нахождение остатка от деления:', a % b)
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_6.png)
 
 ## Выводы
 1. a ** b — возведение числа a в степень b (12 в степени 5). Результат: 248832.
@@ -134,7 +136,7 @@ line = 'Hello!'
 print(line*6)
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_7.png)
 
 ## Выводы
 line * 6 — повторяет строку 'Hello!' 6 раз.
@@ -147,7 +149,7 @@ sentence = 'Hello World'
 print(sentence.count('o'))
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_8.png)
 
 ## Выводы
 sentence.count('o') — метод count() подсчитывает количество вхождений символа 'o' в строке 'Hello World'. Результат: 2, потому что символ 'o' встречается дважды.
@@ -159,7 +161,7 @@ sentence.count('o') — метод count() подсчитывает количе
 print('Hello\nWorld')
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_9.png)
 
 ## Выводы
 \n — это символ новой строки (перевод строки).
@@ -173,7 +175,7 @@ print(sentence[1])
 print(sentence[:5])
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_10.png)
 
 ## Выводы
 1. sentence[1] — обращение к символу по индексу 1. В строке 'Hello World' индексирование начинается с 0, поэтому символ с индексом 1 — это 'e'. Результат: e.
@@ -186,7 +188,7 @@ print(sentence[:5])
 print(bool(0))
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_1.png)
 
 ## Выводы
 1. bool(0) — это преобразование числа 0 в булевое значение. В Python, 0 всегда интерпретируется как False, а любое ненулевое число — как True.
@@ -200,7 +202,7 @@ a, b, c = 1, 2, 3
 print(a, b, c)
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_2.png)
 
 ## Выводы
 1. В первой строке происходит одновременное присвоение значений трём переменным: a = 1, b = 2, c = 3. Это удобный синтаксис для присвоения сразу нескольких переменных.
@@ -214,7 +216,7 @@ a, b = map(int, input().split())
 print(a, b)
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_3.png)
 
 ## Выводы
 1. Функция input() считывает строку, введённую пользователем, из консоли.
@@ -230,7 +232,7 @@ s = 'abcde'
 print(s * (16 // len(s) + 1))
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_4.png)
 
 ## Выводы
 1. Переменная s = 'abcde' содержит строку длиной 5 символов.
@@ -246,7 +248,7 @@ day, month, year = 16, 'сентябрь', 2024
 print(f'Сегодня {day} {month} {year}.', end=' Всего хорошего!')
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_5.png)
 
 ## Выводы
 1. Переменные day, month, year содержат информацию о дне, месяце и годе.
@@ -261,7 +263,7 @@ s = 'Hello World'
 print(s.replace(' ', ' my '))
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_6.png)
 
 ## Выводы
 Мы используем метод строки replace(' ', ' my ') для замены пробела на слово my с пробелами по бокам.
@@ -274,7 +276,7 @@ s = 'Hello World'
 print(len(s))
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_7.png)
 
 ## Выводы
 1. Переменная s содержит строку 'Hello World'.
@@ -288,7 +290,7 @@ s = 'HELLO WORLD'
 print(s.lower())
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_8.png)
 
 ## Выводы
 1. Строка 'HELLO WORLD' хранится в переменной s.
@@ -302,7 +304,7 @@ x = int(input())
 print(x * 1.1)
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_9.png)
 
 ## Выводы
 1. Сначала программа запрашивает ввод числа от пользователя с помощью input(). Мы используем int(), чтобы преобразовать ввод в целое число.
@@ -316,7 +318,7 @@ s = input()
 print(s.replace(' ', '_'))
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Sam_10.png)
 
 ## Выводы
 1. Программа запрашивает строку у пользователя.
