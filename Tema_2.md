@@ -30,7 +30,7 @@ print('123')
 print(1.23)
 ```
 ### Результат.
-![Меню](https://github.com/vnika2003/Software_Engineering/blob/Тема_2/pic/Lab2_1.png)
+![Меню](Lab_1.png)
 
 ## Выводы
 1. print(123) — выводит целое число 123. Это числовой тип данных int.
