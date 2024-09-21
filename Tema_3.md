@@ -33,7 +33,7 @@ else:
     print('Не выполняется')
 ```
 ### Результат.
-![Меню](Lab_1.png)
+![Меню](Laba3-1.png)
 
 ## Выводы
 В данном коде проверяется равенство двух переменных с помощью операторов if/else, и, в зависимости от результата, выполняются соответствующие действия.
@@ -51,7 +51,7 @@ else:
     print('Переменная больше 10')
 ```
 ### Результат.
-![Меню](Lab_2.png)
+![Меню](Laba3-2.png)
 
 ## Выводы
 Конструкция elif позволяет рассмотреть больше 2-х условий.
@@ -68,7 +68,7 @@ else:
     print('Переменной нет в этом массиве')
 ```
 ### Результат.
-![Меню](Lab_3.png)
+![Меню](Laba3-3.png)
 
 ## Выводы
 Оператор in ищет переменную среди элементов массива. С помощью if/else проверяется истинность условия, и выводятся соответствующие результаты.
@@ -88,7 +88,7 @@ else:
     print(f"Переменной нет в массиве numbers и она равна {value}")
 ```
 ### Результат.
-![Меню](Lab_4.png)
+![Меню](Laba3-4.png)
 
 ## Выводы
 С помощью оператора in в основной конструкции if проверяется, есть ли переменная в массиве, а вложенная конструкция if value%2==0: определяет, четное число или же нет.
@@ -110,7 +110,7 @@ for i in range(10):
         break
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/e09c8848-f43b-4b71-8f67-c61c3cb0819c)
+![image](Laba3-5.png)
 
 
 ## Выводы
@@ -134,7 +134,7 @@ else:
     print(f"Буквы '{value}' нет в указанной строке")
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/70908e65-0a4e-456f-b1a0-dea419019579)
+![image](Laba3-6.png)
 
 ## Выводы
 1. `for i in a:` запускается цикл
@@ -150,7 +150,7 @@ for i in range(10,-1, -1):
     print(i, value)
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/87ccd0ff-c31e-43fa-845a-a3fa6309aa79)
+![image](Laba3-7.png)
 
 
 ## Выводы
@@ -171,7 +171,7 @@ while value < 100:
     print(value)
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/b39ec783-a5ea-4cb6-bb4b-ecdaa73b4417)
+![image](Laba3-8.png)
 
 
 ## Выводы
@@ -191,7 +191,7 @@ for i in range(10):
 print(value)
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/c69436f9-8e4d-4967-95db-a5577f43d957)
+![image](Laba3-9.png)
 
 
 ## Выводы
@@ -212,7 +212,7 @@ else:
     print('B массиве все числа четные')
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/8840b58d-b0cd-4016-bdba-106f8ea21c8e)
+![image](Laba3-10.png)
 
 
 ## Выводы
@@ -235,7 +235,7 @@ x += 1
 print(x)
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/b3746dba-1ad1-47df-89fc-9f5e6a8fcc3b)
+![image](Sama3-1.png)
 
 ## Выводы
 Цикл выполняется 1 раз, умножая х на 6, вне цикла добавляется 1.
@@ -249,7 +249,7 @@ for i in range(len(b)):
     print(b[i])
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/efd47cd9-4430-4c30-b50a-528e3e178603)
+![image](Sama3-2.png)
 
 
 ## Выводы
@@ -271,7 +271,7 @@ elif 6<=a and a<=10:
     print(a, ' в диапазоне от 6 до 10 включительно')
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/9cd32b65-45a8-4543-9580-eaaa5cdc7eb6)
+![image](Sama3-3.png)
 
 
 ## Выводы
@@ -300,7 +300,7 @@ if start == True and end == True:
     print ('Предложение начинается на The и заканчивается на end: ')
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/2cf170f5-06aa-4bbb-93dd-325e5840b7e6)
+![image](Sama3-4.png)
 
 ## Выводы
 1. С помощью `len(a)` вычисляется длина строки
@@ -330,7 +330,7 @@ while ' world' not in string:
     counter += 1
 ```
 ### Результат.
-![image](https://github.com/user-attachments/assets/52600742-a155-4462-92f6-f44ea0a2e442)
+![image](Sama3-5.png)
 
 
 
