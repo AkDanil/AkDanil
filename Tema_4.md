@@ -25,9 +25,10 @@
 ### Напишите функцию, которая выполняет любые арифметические действия и выводит результат в консоль. Вызовите функцию используя “точку входа”. 
 
 ```python
-print(123)
-print('123')
-print(1.23)
+def main():
+    print(2+2)
+if __name__ == '__main__':
+    main()
 ```
 ### Результат.
 ![Меню](Lab_1.png)
@@ -41,9 +42,12 @@ print(1.23)
 ### Напишите функцию, которая выполняет любые арифметические действия, возвращает при помощи return значение в место, откуда вызывали функцию. Выведите результат в консоль. Вызовите функцию используя “точку входа”. 
   
 ```python
-print(1823 - 486)
-print(5.1 + 8.27)
-print(3 + 7.04 + 1 + 2.33)
+def main():
+    result = 2 + 2
+    return result
+if __name__ == '__main__':
+    answer = main()
+    print(answer)
 ```
 ### Результат.
 ![Меню](Lab_2.png)
@@ -57,12 +61,11 @@ print(3 + 7.04 + 1 + 2.33)
 ### Напишите функцию, в которую передаются два аргумента, над ними производится арифметическое действие, результат возвращается туда, откуда эту функцию вызывали. Выведите результат в консоль. Вызовите функцию в любом небольшом цикле. 
 
 ```python
-print('Привет, Мир!')
-world = 'Мир'
-print(f"Привет, {world}!")
-one = 'Привет, '
-two = 'Мир!'
-print(one + two)
+def main(one, two): 
+    return one + two
+for i in range(5):
+    answer = main(one=1, two=10)
+    print(answer)
 ```
 ### Результат.
 ![Меню](Lab_3.png)
@@ -77,12 +80,15 @@ print(one + two)
 ### Напишите функцию, на вход которой подается какое-то изначальное неизвестное количество аргументов, над которыми будет производится арифметические действия. Для выполнения задания необходимо использовать кортеж “*args”. 
 
 ```python
-one = "Hello"
-print (bool(one))
-two = 142
-print(float(two))
-three = None
-print(str(three))
+def main(x, *args):
+    one = x 
+    two = sum(args)
+    three = float(len(args))
+    print(f"one={one}\ntwo={two}\nthree={three}")
+    return x + sum(args) / float(len(args))
+if __name__ == '__main__':
+    result = main(10, 0, 1, 2, -1, 0, -1, 1, 2)
+    print(f"\nresult={result}")
 ```
 ### Результат.
 ![Меню](Lab_4.png)
@@ -96,10 +102,16 @@ print(str(three))
 ### Напишите функцию, которая на вход получает кортеж “**kwargs” и при помощи цикла выводит значения, поступившие в функцию. На скриншоте ниже указаны два варианта вызова функции с “**kwargs” и два варианта работы с данными, поступившими в эту функцию. Комментарии в коде и теоретическая часть помогут вам разобраться в этом нелегком аспекте. Вызовите функцию используя “точку входа”. 
 
 ```python
-one = input('one:')
-two = input('two:')
-three = input('three:')
-print(one, two, three)
+def main(**kwargs):
+    for i in kwargs.items():
+        print(i[0], i[1])
+    print()
+    for key in kwargs:
+        print(f"{key} = {kwargs[key]}")
+if __name__ == '__main__':
+    main(x=[1, 2, 3], y=[3, 3, 0], z=[2, 3, 0], q=[3, 3, 0], w=[3, 3, 0]) 
+    print()
+    main(**{'x': [1, 2, 3], 'y': [3, 3, 0]})
 ```
 ### Результат.
 ![Меню](Lab_5.png)
@@ -111,12 +123,14 @@ print(one, two, three)
 ## Лабораторная работа №6
 ### Напишите две функции. Первая – получает в виде параметра “**kwargs”. Вторая считает среднее арифметическое из значений первой функции. Вызовите первую функцию используя “точку входа” и минимум 4 аргумента. 
 ```python
-a = 12
-b = 5
-print('Возведение в степень:', a ** b)
-print('Обычное деление:', a / b)
-print('Целочисленное деление:', a // b)
-print('Нахождение остатка от деления:', a % b)
+def main(**kwargs):
+    for i, j in kwargs.items():
+        print(f"{i}. Mean = {mean(j)}")
+
+def mean(data):
+    return sum(data) / float(len(data))
+if __name__ == '__main__':
+    main(x=[1, 2, 3], y=[3, 3, 0])
 ```
 ### Результат.
 ![Меню](Lab_6.png)
@@ -131,8 +145,13 @@ print('Нахождение остатка от деления:', a % b)
 ### Создайте дополнительный файл .py. Напишите в нем любую функцию, которая будет что угодно выводить в консоль, но не вызывайте ее в нем. Откройте файл main.py, импортируйте в него функцию из нового файла и при помощи “точки входа” вызовите эту функцию. 
 
 ```python
-line = 'Hello!'
-print(line*6)
+from for_import import say_hello
+
+if __name__ == '__main__':
+    say_hello()
+
+def say_hello():
+    print('Hello studentds!')
 ```
 ### Результат.
 ![Меню](Lab_7.png)
@@ -144,8 +163,15 @@ line * 6 — повторяет строку 'Hello!' 6 раз.
 ### Напишите программу, которая будет выводить корень, синус, косинус полученного от пользователя числа. 
 
 ```python
-sentence = 'Hello World'
-print(sentence.count('o'))
+import math
+
+def main():
+    value = int(input('Введите значение:'))
+    print(math.sqrt(value))
+    print(math.sin(value))
+    print(math.cos(value))
+if __name__ == '__main__':
+    main()
 ```
 ### Результат.
 ![Меню](Lab_8.png)
@@ -157,7 +183,24 @@ sentence.count('o') — метод count() подсчитывает количе
 ### Напишите программу, которая будет рассчитывать какой день недели будет через n-нное количество дней, которые укажет пользователь. 
 
 ```python
-print('Hello\nWorld')
+from datetime import datetime as dt 
+from datetime import timedelta as td 
+
+def main():
+    print( 
+        f"Сегодня {dt.today().date()}. "
+        f"День недели - {dt.today().isoweekday()}"
+    )
+    n = int(input('Введите количество дней: ')) 
+    today = dt.today()
+    result = today + td(days=n) 
+    print(
+        f"Через {n} дней будет {result.date()}. " 
+        f"День недели - {result.isoweekday()}"
+    )
+    
+if __name__ == '__main__':
+    main()
 ```
 ### Результат.
 ![Меню](Lab_9.png)
@@ -169,9 +212,28 @@ print('Hello\nWorld')
 ### Напишите программу с использованием глобальных переменных, которая будет считать площадь треугольника или прямоугольника в зависимости от того, что выберет пользователь. Получение всей необходимой информации реализовать через input(), а подсчет площадей выполнить при помощи функций. Результатом программы будет число, равное площади, необходимой фигуры. 
 
 ```python
-sentence = 'Hello World'
-print(sentence[1])
-print(sentence[:5])
+global result
+
+def rectangle():
+    a = float(input("Ширина: ")) 
+    b = float(input("Высота: ")) 
+    global result 
+    result = a * b
+    
+def triangle():
+    a = float(input("Основание: "))
+    h = float(input("Высота: "))
+    global result
+    result = 0.5 * a * h
+    
+figure = input("1-прямоугольник, 2-треугольник: ")
+
+if figure == '1': 
+    rectangle()
+elif figure == '2':
+    triangle()
+    
+print(f"Площадь: {result}")
 ```
 ### Результат.
 ![Меню](Lab_10.png)
