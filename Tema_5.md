@@ -363,6 +363,8 @@ print(correct_grades(grades3))
 ### {'11', 1, 3, 2, 5, 6, '222222', '222', 7, '2222', '22222', '22'}
 
 ```python
+from collections import Counter
+
 # Функция для формирования множества
 def process_list(lst):
     result = set()
